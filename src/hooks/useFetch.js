@@ -5,7 +5,7 @@ export function useFetch() {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const url = 'http://api.github.com/users/DevDeyvidTav/repos'
+    const url = 'https://api.github.com/users/DevDeyvidTav/repos'
 
     useEffect(() => {
         axios.get(url)

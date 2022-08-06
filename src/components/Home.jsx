@@ -1,4 +1,5 @@
 import { Button } from "@material-tailwind/react";
+import Img from "../images/img.png"
 
 export function Home() {
     return (
@@ -10,7 +11,7 @@ export function Home() {
                 <a href="https://github.com/DevDeyvidTav"> <Button variant="gradient" className="mt-4 shadow-md shadow-black bg-zinc-800 p-2 rounded-sm text-white">Veja meu trabalho</Button></a>
             </div>
             <div className="flex tablet-m:w-1/5 tablet-m:h-5/6 h-4/5 w-96 items-center justify-center">
-                <img src="../../images/img.png" alt="" className=" w-ful h-full" />
+                <img src={Img} alt="" className=" w-ful h-full" />
             </div>
         </div>
     )

@@ -5,6 +5,7 @@ import { About } from "./components/About"
 import { Contacts } from "./components/Contacts"
 import { Projetos } from "./components/Projetos"
 import { NotFound } from "./components/NotFound"
+import { Skills } from "./components/Skills"
 
 export function App(props) {
   return (
@@ -36,6 +37,7 @@ export function App(props) {
           <Route path="/Contacts" element={<Contacts/>} />
           <Route path="/Projetos" element={<Projetos/>} />
           <Route path="*" element={<NotFound/>} />
+          <Route path="/Skills" element={<Skills/>} />
         </Routes>
 
 

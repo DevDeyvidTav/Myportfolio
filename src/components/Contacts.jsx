@@ -22,7 +22,7 @@ export function Contacts() {
                     <a href="https://www.linkedin.com/in/deyvid-tavares-37918b236/"><Button className="bg-zinc-800 rounded-md px-10 py-2 flex items-center"><img className="w-7 mr-3" src={Lkdin} alt="" />  LinkedIn!!</Button></a>
                 </div>
                 <div>
-                    <Popover placement="right-start">
+                    <Popover placement="bottom">
                         <PopoverHandler>
                             <Button className="bg-zinc-800 rounded-md px-10 py-2 flex items-center" variant="gradient"> <img className="w-7 mr-3" src={Phone} alt="" />  Telefone</Button>
                         </PopoverHandler>
@@ -35,7 +35,7 @@ export function Contacts() {
                     <a href="https://wa.me/5581997210434"><Button className="bg-zinc-800 rounded-md px-10 py-2 flex items-center"><img className="w-7 mr-3" src={Wpp} alt="" /> WhatsApp!!</Button></a>
                 </div>
                 <div>
-                <Popover placement="right-start">
+                <Popover placement="bottom">
                         <PopoverHandler>
                             <Button className="bg-zinc-800 rounded-md px-10 py-2 flex items-center" variant="gradient"> <img className="w-7 mr-3" src={Email} alt="" />  E-mail</Button>
                         </PopoverHandler>

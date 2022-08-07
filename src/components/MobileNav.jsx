@@ -9,7 +9,7 @@ import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import { About } from "./About";
 import { Contacts } from "./Contacts";
 import { Home } from "./Home";
-
+import { Skills } from "./Skills";
 
 
 export function MobileNav() {
@@ -27,7 +27,9 @@ export function MobileNav() {
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="/About">Sobre</NavLink>
                             <NavLink to="/Projetos">Projetos</NavLink>
+                            <NavLink to="/Skills">Habilidades</NavLink>
                             <NavLink to="/Contacts">Contato</NavLink>
+
                         </PopoverContent>
                     </Popover>
                 </Fragment>

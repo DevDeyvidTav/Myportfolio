@@ -21,7 +21,7 @@ export function Skills() {
                 className="flex flex-col items-center justify-center  rounded-md shadow-2xl shadow-zinc-800 w-96 h-5/6">
 
                     <h2 className="text-4xl text-zinc-800 font-semibold mb-8">Habilidades:</h2>
-                <div className="flex items-center justify-center flex-wrap gap-6">
+                <div className="flex items-center justify-center flex-wrap gap-6 ">
                 <Menu placement="top">
                     <MenuHandler>
                         <Button variant="gradient"> <img className="w-20" src={Html} alt="" /></Button>

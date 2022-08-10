@@ -26,9 +26,9 @@ export function About() {
                     className="hidden tablet-m:flex tablet-m:flex-wrap items-center justify-center gap-6 rounded-md shadow-2xl shadow-zinc-800 w-96 h-96">
                     <Menu placement="top">
                         <MenuHandler>
-                            <Button variant="gradient"> <img className="w-20" src={Html} alt="" /></Button>
+                            <Button variant="gradient"> <img className="w-20 " src={Html} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.</MenuItem>
                             
                         </MenuList>
@@ -37,7 +37,7 @@ export function About() {
                         <MenuHandler>
                             <Button variant="gradient"> <img className="w-20" src={Css} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</MenuItem>
                             
                         </MenuList>
@@ -46,7 +46,7 @@ export function About() {
                         <MenuHandler>
                             <Button variant="gradient"> <img className="w-20" src={Js} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</MenuItem>
                             
                         </MenuList>
@@ -55,7 +55,7 @@ export function About() {
                         <MenuHandler>
                             <Button variant="gradient"> <img className="w-20" src={React} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras empresas e uma comunidade de desenvolvedores individuais.</MenuItem>
 
                         </MenuList>
@@ -64,7 +64,7 @@ export function About() {
                         <MenuHandler>
                             <Button variant="gradient"> <img className="w-20" src={Twnd} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>Tailwind é um framework CSS que oferece a possibilidade de você criar layouts usando uma estrutura de CSS pronta. Isso permite que você otimize o tempo de criação de uma UI sem precisar fazer tudo manualmente.</MenuItem>
                            
                         </MenuList>
@@ -73,7 +73,7 @@ export function About() {
                         <MenuHandler>
                             <Button variant="gradient"> <img className="w-20" src={Wbpak} alt="" /></Button>
                         </MenuHandler>
-                        <MenuList>
+                        <MenuList className="shadow-2xl flex items-center justify-center p-5 mx-4 w-72 shadow-zinc-800">
                             <MenuItem>O Webpack é um empacotador de módulos gratuito e de código aberto para JavaScript. Ele é feito principalmente para JavaScript, mas pode transformar ativos de front-end, como HTML, CSS e imagens, se os carregadores correspondentes forem incluídos.</MenuItem>
                             
                         </MenuList>

@@ -3,15 +3,15 @@ import Img from "../images/img.png"
 
 export function Home() {
     return (
-        <div className="mt-20 tablet-m:mt-0 container| font-sans gap-16 flex flex-col tablet-m:flex-row items-center justify-center w-screen h-3/4 tablet-m:gap-56">
-            <div className="apresentation-home| flex flex-col items-center justify-center ">
+        <div className=" container| flex flex-col tablet-m:flex-row bg-zinc-200 w-screen m max-w-full ">
+            <div className="tablet-m:w-3/5 w-screen ">
+                <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="mt-2 rounded-lg w-full h-[45vw]" />
+            </div>
+            <div className="apresentation-home| flex flex-col tablet-m:w-2/5 w-screen justify-center mt-20 tablet-m:mt-0 items-center ">
                 <p className="text-2xl text-zinc-700">Olá mundo, Meu nome é</p>
                 <p className="text-4xl font-semibold">Deyvid Tavares</p>
                 <p className="text-md text-semibold text-zinc-400">e esta é a pagina de divulgação do meu trabalho </p>
-                <a href="https://github.com/DevDeyvidTav"> <Button variant="gradient" className="mt-4 shadow-md shadow-black bg-zinc-800 p-2 rounded-sm text-white">Veja meu trabalho</Button></a>
-            </div>
-            <div className="flex tablet-m:w-2/5 tablet-m:h-5/6 h-4/5 w-96 items-center justify-center">
-                <img src="https://img.icons8.com/ios-filled/200/programming.png" alt="" className=" w-ful h-full" />
+                <a href="https://github.com/DevDeyvidTav" target='_blank'> <Button variant="gradient" className="mt-4 shadow-md shadow-black bg-zinc-800 p-2 rounded-sm text-white">Veja meu trabalho</Button></a>
             </div>
         </div>
     )

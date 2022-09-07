@@ -9,14 +9,17 @@ import Phone from "../images/phone-symbol-of-an-auricular-inside-a-circle_icon-i
 import Wpp from "../images/whatsapp-logo_icon-icons.com_57054.svg"
 import Lkdin from "../images/linkedin_black_logo_icon_147114.svg"
 import Email from "../images/opened-email-envelope_icon-icons.com_70656.svg"
+import { useContext } from "react";
+import { PortfolioContext } from "../contexts/PortfolioContext";
 
 
 
 
 
 export function Contacts() {
+    const { open } = useContext(PortfolioContext)
     return (
-        <div className="flex flex-col gap-10 items-center justify-center w-screen h-3/4">
+        <div className={`${open ? "translate-x-full" : "translate-x-0"} duration-500 flex flex-col gap-10 items-center justify-center w-screen h-3/4`}>
             <div className="shadow-2xl shadow-zinc-800  w-4/5 tablet-m:w-96 h-4/5 py-20 flex flex-col items-center gap-10 rounded-md ">
                 <div>
                     <a href="https://www.linkedin.com/in/deyvid-tavares-37918b236/"><Button className="bg-zinc-800 rounded-md px-10 py-2 flex items-center"><img className="w-7 mr-3" src={Lkdin} alt="" />  LinkedIn!!</Button></a>

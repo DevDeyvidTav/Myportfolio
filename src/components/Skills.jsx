@@ -11,12 +11,15 @@ import {
     MenuItem,
     Button,
 } from "@material-tailwind/react";
+import { useContext } from "react"
+import { PortfolioContext } from "../contexts/PortfolioContext"
 
 
 
 export function Skills() {
+    const { open } = useContext(PortfolioContext)
     return (
-        <div className="flex items-center justify-center w-screen h-3/4">
+        <div className={`${open ? 'translate-x-full' : 'translate-x-0'} flex items-center duration-500 justify-center w-screen h-3/4 `}>
             <div
                 className="flex flex-col items-center justify-center  rounded-md shadow-2xl shadow-zinc-800 w-96 h-5/6">
 

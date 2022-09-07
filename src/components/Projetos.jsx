@@ -1,25 +1,54 @@
-    import { useFetch } from "../hooks/useFetch"
-    import Button from "@material-tailwind/react/components/Button"
+import dtstore from '../images/dtstore.png'
+import pokedex from '../images/pokedex.png'
+import coffeeshop from '../images/coffeeshop.png'
+import imc from '../images/imc.png'
+import { useContext } from 'react'
+import { PortfolioContext } from '../contexts/PortfolioContext'
 
-
-
-
-    
-    
     export function Projetos(){
-        const {data, loading} = useFetch()
-        console.log(data)
+        const { open } = useContext(PortfolioContext)
         return(
-           
-                <ul className="flex flex-col w-screen h-3/4 items-center justify-center ">
-                    {loading && <p> carregando... </p>}
-                    <div className="flex flex-col gap-2 p-3 items-center justify-center shadow-2xl shadow-zinc-800 rounded-md w-4/5 tablet-m:w-96 h-4/5">
-                {data.map((item, i) => {
-                        return <li key={i}><a href={item.clone_url} target="_blank"><Button className="px-10 py-2 rounded-md flex items-center bg-zinc-800">{item.name}</Button></a></li>
-                    }
-                    )}
+           <div className=" w-screen max-w-full  bg-zinc-200">
+                
+                <div className={`${open ? 'translate-x-full' : 'translate-x-0' } projetos-area| duration-500 flex-wrap flex justify-center items-center mt-10 gap-10`}>
+                    <div className="dtstore| w-72 h-44">
+                        <img className='w-72 absolute h-44 rounded-md' src={dtstore} alt="" />
+                        <div className="info-dtstore| flex justify-center items-center relative rounded-md opacity-0 hover:opacity-70 bg-black w-full h-full">
+                            <button className='opacity-100 text-black font-extrabold rounded-full p-2 bg-white'>Informações</button>
+                        </div>
                     </div>
-                </ul>
-           
+                    <div className="pokedex| w-72 h-44">
+                        <img className='w-72 absolute h-44 rounded-md' src={pokedex} alt="" />
+                        <div className="info| flex justify-center items-center relative rounded-md opacity-0 hover:opacity-70 bg-black w-full h-full">
+                            <button className='opacity-100 text-black font-extrabold rounded-full p-2 bg-white'>Informações</button>
+                        </div>
+                    </div>
+                    <div className="coffeshop| w-72 h-44">
+                        <img className='w-72 absolute h-44 rounded-md' src={coffeeshop} alt="" />
+                        <div className="info| flex justify-center items-center relative rounded-md opacity-0 hover:opacity-70 bg-black w-full h-full">
+                            <button className='opacity-100 text-black font-extrabold rounded-full p-2 bg-white'>Informações</button>
+                        </div>
+                    </div>
+                    <div className="imc| w-72 h-44">
+                        <img className='w-72 absolute h-44 rounded-md' src={imc} alt="" />
+                        <div className="info-dtstore| flex justify-center items-center relative rounded-md opacity-0 hover:opacity-70 bg-black w-full h-full">
+                            <button className='opacity-100 text-black font-extrabold rounded-full p-2 bg-white'>Informações</button>
+                        </div>
+                    </div><div className="dtstore| w-72 h-44">
+                        <img className='w-72 absolute h-44 rounded-md' src={dtstore} alt="" />
+                        <div className="info-dtstore| flex justify-center items-center relative rounded-md opacity-0 hover:opacity-70 bg-black w-full h-full">
+                            <button className='opacity-100 text-black font-extrabold rounded-full p-2 bg-white'>Informações</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+           </div>
         )
     }

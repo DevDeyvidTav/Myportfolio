@@ -9,12 +9,12 @@ export function Home() {
     const { open, setOpen } = useContext(PortfolioContext)
     return (
         <div id='Home' className="h-screen w-screen flex flex-col tablet-m:flex-row bg-gray-200 items-center tablet-m:items-start max-w-full">
-            <div className={`${open ? 'hidden':''} duration-500 h-24 tablet-m:h-5/6 mt-12 tablet-m:mt-20 w-screen tablet-m:w-3/5 rounded-xl  bg-black flex justify-center items-center`}>
-                <DiReact className="text-white w-32 h-32"/>
-                <SiTailwindcss className="text-white w-32 h-32"/>
-                <DiJavascript1 className="text-white w-32 h-32"/>
+            <div className={`${open ? 'hidden':''} ml-5 duration-500 h-24 tablet-m:h-5/6 mt-12 tablet-m:mt-20 w-screen tablet-m:w-3/5 rounded-xl  bg-black flex justify-center items-center`}>
+                <DiReact className="text-white w-16 h-16 tablet-m:w-32 tablet-m:h-32"/>
+                <SiTailwindcss className="text-white w-16 h-16 tablet-m:w-32 tablet-m:h-32"/>
+                <DiJavascript1 className="text-white w-16 h-16  tablet-m:w-32 tablet-m:h-32"/>
             </div> 
-            <div className="h-screen tablet-md:w-2/5 flex justify-center mt-20 text-center items-center flex-col">
+            <div className="h-screen tablet-m:w-2/5 flex justify-center mt-20 text-center items-center flex-col">
                 <p className="text-zinc-600 text-2xl tablet-m:text-4xl w-96">
                     olá mundo,
                 </p>

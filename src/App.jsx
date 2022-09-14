@@ -14,7 +14,7 @@ import { Header } from "./components/Header"
 export function App(props) {
   const { open, setOpen} = useContext(PortfolioContext)
   return (
-    <div className="w-screen h-screen max-h-full ">
+    <div className="w-screen h-screen max-h-full max-w-full ">
       <Header/>
       <Home/>
       <About/>

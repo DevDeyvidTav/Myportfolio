@@ -9,12 +9,12 @@ export function Header() {
     scrollTo
     return (
         <div>
-            <div className="nav-bar flex mobile:flex-col justify-between fixed shadow-md w-screen ">
+            <div className="nav-bar flex mobile:flex-col justify-between fixed shadow-md w-screen opacity-90 bg-zinc-800">
                 <div className="nav-bar-1| p-2 opacity-90 flex justify-between tablet-m:mx-32
         sm:mx-0 mobile:mx-0">
 
-                    <p  className="font-bold text-3xl  tablet-p:text-4xl">MyPortfolio.</p>
-                    <div className=' main md:gap-3 flex gap items-center font-semibold text-zinc-700 '>
+                    <p  className="font-bold text-3xl text-white tablet-p:text-4xl">MyPortfolio.</p>
+                    <div className=' main md:gap-3 flex gap items-center font-semibold text-white '>
                         <div className="hidden tablet-p:flex justify-end space-x-5 ">
                             <a href="/#Home">Home</a>
                             <a href="/#About">Sobre</a>

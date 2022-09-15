@@ -21,7 +21,7 @@ export function Header() {
                             <a href="/#Projetos">Projetos</a>
                             <a href="/#Contact">Contato</a>
                         </div>
-                        <button className={`${open ? 'hidden' : ''} tablet-p:hidden text-black`}>
+                        <button className={`${open ? 'hidden' : ''} tablet-p:hidden white`}>
                             <svg onClick={() => setOpen(!open)} xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
@@ -33,14 +33,13 @@ export function Header() {
 
                 </div>
             </div>
-            <div className={`${open ? 'translate-x-0' : '-translate-x-full'} duration-500 flex-col gap-8 h-full w-5/6 rounded-2xl max-w-full  fixed bg-zinc-800 `}>
+            <div className={`${open ? 'translate-x-0 shadow-2xl shadow-black opacity-100 ' : '-translate-x-full opacity-0'} duration-500 flex-col gap-8 h-full w-5/6 rounded-2xl rounded-l-none max-w-full  fixed bg-zinc-800 `}>
          
           <div className="text-white flex flex-col h-full items-center justify-center gap-20 text-4xl font-bold">
-            <p onClick={() => setOpen(!open)} >Home</p>
-            <p onClick={() => setOpen(!open)} >Sobre</ p>
-            <p onClick={() => setOpen(!open)} >Habilidades</p>
-            <p onClick={() => setOpen(!open)} >Projetos</ p>
-            <p onClick={() => setOpen(!open)} >Contatos</p>
+            <a href="#Home"><p onClick={() => setOpen(!open)} >Home</p></a>
+            <a href="#About"><p onClick={() => setOpen(!open)} >Sobre</p></a>
+            <a href="#Projetos"><p onClick={() => setOpen(!open)} >Projetos</p></a>
+            <a href="#Contact"><p onClick={() => setOpen(!open)} >Contato</p></a>
           </div>
         </div>
         </div>

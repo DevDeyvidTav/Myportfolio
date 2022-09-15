@@ -1,4 +1,3 @@
-import { TbBrandJavascript } from 'react-icons/Tb';
 import js from '../images/js.svg'
 import tailwind from '../images/tailwind.svg'
 import html from '../images/html.svg'

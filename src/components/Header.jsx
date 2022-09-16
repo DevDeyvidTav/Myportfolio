@@ -36,10 +36,10 @@ export function Header() {
             <div className={`${open ? 'translate-x-0 shadow-2xl shadow-black opacity-100 ' : '-translate-x-full opacity-0'} duration-500 flex-col gap-8 h-full w-5/6 rounded-2xl rounded-l-none max-w-full  fixed bg-zinc-800 `}>
          
           <div className="text-white flex flex-col h-full items-center justify-center gap-20 text-4xl font-bold">
-            <a href="#Home"><p onClick={() => setOpen(!open)} >Home</p></a>
-            <a href="#About"><p onClick={() => setOpen(!open)} >Sobre</p></a>
-            <a href="#Projetos"><p onClick={() => setOpen(!open)} >Projetos</p></a>
-            <a href="#Contact"><p onClick={() => setOpen(!open)} >Contato</p></a>
+            <a href="/#Home"><p onClick={() => setOpen(!open)} >Home</p></a>
+            <a href="/#About"><p onClick={() => setOpen(!open)} >Sobre</p></a>
+            <a href="/#Projetos"><p onClick={() => setOpen(!open)} >Projetos</p></a>
+            <a href="/#Contact"><p onClick={() => setOpen(!open)} >Contato</p></a>
           </div>
         </div>
         </div>

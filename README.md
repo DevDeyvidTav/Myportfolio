@@ -13,3 +13,6 @@
 + React Hooks
 
 ### this project will always be update , because i will be continue to post more personal projects in the portfolio
+
+[![LINKEDIN](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deyvid-tavares-37918b236/)
+[![INSTAGRAM](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/deyvid_tavar/)

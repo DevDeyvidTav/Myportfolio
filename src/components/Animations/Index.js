@@ -29,6 +29,21 @@ const animationTextHome = keyframes`
 
 `
 
+const animationButton = keyframes`
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+`
+
 export const ImgHome = styled.div `
     animation: ${animationImgHome} .8s ;
     display: flex;
@@ -38,4 +53,7 @@ export const ImgHome = styled.div `
 export const TextHome = styled.div`
     animation: ${animationTextHome} .8s ;
 
+`
+export const ButtonHome = styled.div `
+    animation: ${animationButton} .8s;
 `

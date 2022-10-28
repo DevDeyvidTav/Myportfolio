@@ -25,9 +25,9 @@ export function Contacts() {
                     <a href="https://www.instagram.com/deyvid_tavar/" target="_blank"><div className="flex"><img className="w-7 h-7" src={insta} alt="" />instagram</div></a>
                 </div>
                 <div className="footer| gap-10 justify-center items-center bg-zinc-900 w-full h-16 flex">
-                    <a href="https://www.linkedin.com/in/deyvid-tavares-37918b236/" target="_blank"><img className=" w-7 h-7" src={linkedin} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/deyvid-tavares-37918b236/" target="_blank"><img className="  w-7 h-7" src={linkedin} alt="" /></a>
                     <a href="https://github.com/DevDeyvidTav" target="_blank" ><img className="w-7 h-7" src={github} alt="" /></a>
-                    
+                    <a className="text-white font-black text-2xl" href="https://drive.google.com/drive/u/0/folders/1Mk_ZA8aQG_zk7vD1AD3VtV-9DBmO899I" target="_blank">CV</a>
                 </div>
             </div>
         </div>
